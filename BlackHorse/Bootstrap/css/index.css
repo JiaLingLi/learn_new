@@ -1,0 +1,142 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 修改container最大宽度为1280 */
+
+@media screen and (min-width:1280px){
+    .contaniner{
+        width: 1280px;
+        margin: 0 auto;
+    }
+}
+/* header */
+.logo{
+    background-color: blue;
+}
+.logo img{
+    display: block; 
+    margin: 0 auto;
+    max-width: 100%;
+}
+.logo span{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+ 
+.nav{
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding-left:30px ;
+    font-size: 16px;
+}
+.nav a::before{
+    vertical-align: middle;
+    padding-right: 5px;
+
+}
+.news li{
+    float: left;
+    height: 128px;
+    width: 25%;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+@media (max-width:991px){
+    .nav li{
+        float: left;
+        width: 20%;
+    }
+}
+@media (max-width:767px){
+    .nav li a{
+        font-size: 14px;
+    }
+    .news li:nth-child(1){
+        width: 100%!important;
+    }
+    .news li{
+        width: 50%!important;
+    }
+    .publish h3{
+        font-size: 14px;
+    }
+}
+.news li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+}
+
+.news li:nth-child(1){
+    width: 50%;
+    height: 266px;
+}
+.news li:nth-child(1) p{
+    font-size: 20px;
+    line-height: 41px;
+    padding: 0 10px;
+}
+
+
+.news li a img{
+    width: 100%;
+    height: 100%;
+}
+.news li a p {
+    width: 100%;
+    height: 41px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px 10px;
+    margin-bottom: 0;
+    background:rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+ }
+.publish{
+border-top: 1px solid #ccc ;
+}
+.publish .row{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.pic{
+    padding-top: 10px;
+}
+
+.pic img{
+    width: 100%;
+}
+.banner img{
+    width: 100%;
+
+}
+.hot{
+    display: block;
+    border: 1px solid #ccc;
+    padding:0 20px 10px;
+    margin-top: 20px;
+}
+.hot span{
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+.hot p{
+    font-size: 12px;
+}
